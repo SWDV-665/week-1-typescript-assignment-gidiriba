@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Groceries list</title>
+   
+   <script type="text/javascript">
+         
+         class Grocery {
+        // add a constructor
+        constructor(n, q, c) {
+            this.name = n;
+            this.quantity = q;
+            this.cost = c;
+        }
+    }
+    // create a list of grocery items
+  
+    let list_of_items = [
+        new grocery("milk", 3, 12),
+        new grocery("bread", 6, 24),
+        new grocery("egg", 11, 8)
+    ];
+    
+    </script>
+
+</head>
+
+  <body>
+   <H6>This is the page for groceries </H6>
+  </body>
+</html>
+
+
+Grocery.ts
+
+
+class Grocery {
+    name: string;
+    quantity: number;
+    cost: number;
+
+    // add a constructor
+    constructor(n: string, q: number, c: number){
+        this.name = n;
+        this.quantity = q;
+        this.cost = c;
+    }
+}
+
+// create a list of grocery items
+
+let list_of_items = [
+    new grocery("milk", 3, 12),
+    new grocery("bread", 6, 24),
+    new grocery("egg", 11, 8)
+]
